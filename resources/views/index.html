@@ -91,20 +91,122 @@
                     </svg>
                 </button>
                 <!-- Menu Desktop -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#accueil" class="hover:text-sky-200 transition">Accueil</a>
-                    <a href="#portfolio" class="hover:text-sky-200 transition">Réalisations</a>
-                    <a href="#forfaits" class="hover:text-sky-200 transition">Forfaits</a>
-                    <a href="#contact" class="hover:text-sky-200 transition">Contact</a>
+                <div class="hidden md:flex space-x-4">
+                    <!-- Accueil Dropdown -->
+                    <div class="relative group">
+                        <a href="#accueil" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Accueil
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#landing" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Landing page</a>
+                            <a href="#offre-phare" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Offre phare</a>
+                        </div>
+                    </div>
+
+                    <!-- Nos Offres Dropdown -->
+                    <div class="relative group">
+                        <a href="#forfaits" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Nos Offres
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#site-vitrine" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Site Vitrine (20$/mois)</a>
+                            <a href="#site-microfinance" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Site Microfinance (35$/mois)</a>
+                            <a href="#site-entreprise" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Site Entreprise (45$/mois)</a>
+                            <a href="#comparer" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Comparer les offres</a>
+                        </div>
+                    </div>
+
+                    <!-- Crédit Flexible Dropdown -->
+                    <div class="relative group">
+                        <a href="#credit" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Crédit Flexible
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#calculateur" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Calculateur de mensualités</a>
+                            <a href="#eligibilite" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Conditions d'éligibilité</a>
+                            <a href="#faq" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">FAQ Crédit</a>
+                        </div>
+                    </div>
+
+                    <!-- Réalisations Dropdown -->
+                    <div class="relative group">
+                        <a href="#portfolio" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Réalisations
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#portfolio" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Portfolio clients</a>
+                            <a href="#temoignages" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Témoignages vérifiés</a>
+                        </div>
+                    </div>
+
+                    <!-- Assistance Dropdown -->
+                    <div class="relative group">
+                        <a href="#assistance" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Assistance
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#chat" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Chat instantané</a>
+                            <a href="#aide" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Centre d'aide</a>
+                            <a href="#status" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Statut des serveurs</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="hover:text-sky-200 transition py-2 px-3">Contact</a>
                 </div>
             </div>
             <!-- Menu Mobile Panel -->
             <div class="md:hidden" id="mobileMenu" style="display: none;">
-                <div class="flex flex-col space-y-4 pt-4 pb-3">
-                    <a href="#accueil" class="hover:text-sky-200 transition">Accueil</a>
-                    <a href="#portfolio" class="hover:text-sky-200 transition">Réalisations</a>
-                    <a href="#forfaits" class="hover:text-sky-200 transition">Forfaits</a>
-                    <a href="#contact" class="hover:text-sky-200 transition">Contact</a>
+                <div class="flex flex-col space-y-2 pt-4 pb-3">
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Accueil</div>
+                        <a href="#landing" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Landing page</a>
+                        <a href="#offre-phare" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Offre phare</a>
+                    </div>
+                    
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Nos Offres</div>
+                        <a href="#site-vitrine" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Site Vitrine (20$/mois)</a>
+                        <a href="#site-microfinance" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Site Microfinance (35$/mois)</a>
+                        <a href="#site-entreprise" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Site Entreprise (45$/mois)</a>
+                        <a href="#comparer" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Comparer les offres</a>
+                    </div>
+
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Crédit Flexible</div>
+                        <a href="#calculateur" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Calculateur de mensualités</a>
+                        <a href="#eligibilite" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Conditions d'éligibilité</a>
+                        <a href="#faq" class="block px-4 py-2 text-sky-200 hover:bg-white/10">FAQ Crédit</a>
+                    </div>
+
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Réalisations</div>
+                        <a href="#portfolio" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Portfolio clients</a>
+                        <a href="#temoignages" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Témoignages vérifiés</a>
+                    </div>
+
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Assistance</div>
+                        <a href="#chat" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Chat instantané</a>
+                        <a href="#aide" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Centre d'aide</a>
+                        <a href="#status" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Statut des serveurs</a>
+                    </div>
+
+                    <a href="#contact" class="block px-4 py-2 text-white hover:bg-white/10">Contact</a>
                 </div>
             </div>
         </nav>
