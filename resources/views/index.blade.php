@@ -137,7 +137,7 @@
                                 <svg class="w-6 h-6 mr-2 text-sky-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <p>Site livré immédiatement</p>
+                                <p>preventpain</p>
                             </div>
                         </div>
                         <a href="#forfaits" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-sky-100 transition duration-300">
