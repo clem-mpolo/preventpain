@@ -80,7 +80,7 @@
     </head>
     
 <body class="bg-sky-50">
-    <header class="bg-gradient-to-r from-sky-600 to-blue-600 text-white fixed w-full z-10">
+    <header class="bg-gradient-to-r from-sky-600 to-blue-600 text-white fixed w-full z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="text-xl font-bold">MonSiteàCrédit</div>
@@ -91,68 +91,241 @@
                     </svg>
                 </button>
                 <!-- Menu Desktop -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#accueil" class="hover:text-sky-200 transition">Accueil</a>
-                    <a href="#portfolio" class="hover:text-sky-200 transition">Réalisations</a>
-                    <a href="#forfaits" class="hover:text-sky-200 transition">Forfaits</a>
-                    <a href="#contact" class="hover:text-sky-200 transition">Contact</a>
+                <div class="hidden md:flex space-x-4">
+                    <!-- Accueil Dropdown -->
+                    <div class="relative group">
+                        <a href="#accueil" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Accueil
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#landing" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Landing page</a>
+                            <a href="#offre-phare" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Offre phare</a>
+                        </div>
+                    </div>
+
+                    <!-- Nos Offres Dropdown -->
+                    <div class="relative group">
+                        <a href="#forfaits" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Nos Offres
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#site-vitrine" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Site Vitrine (20$/mois)</a>
+                            <a href="#site-microfinance" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Site Microfinance (35$/mois)</a>
+                            <a href="#site-entreprise" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Site Entreprise (45$/mois)</a>
+                            <a href="#comparer" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Comparer les offres</a>
+                        </div>
+                    </div>
+
+                    <!-- Crédit Flexible Dropdown -->
+                    <div class="relative group">
+                        <a href="#credit" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Crédit Flexible
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#calculateur" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Calculateur de mensualités</a>
+                            <a href="#eligibilite" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Conditions d'éligibilité</a>
+                            <a href="#faq" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">FAQ Crédit</a>
+                        </div>
+                    </div>
+
+                    <!-- Réalisations Dropdown -->
+                    <div class="relative group">
+                        <a href="#portfolio" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Réalisations
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#portfolio" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Portfolio clients</a>
+                            <a href="#temoignages" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Témoignages vérifiés</a>
+                        </div>
+                    </div>
+
+                    <!-- Assistance Dropdown -->
+                    <div class="relative group">
+                        <a href="#assistance" class="hover:text-sky-200 transition py-2 px-3 inline-flex items-center">
+                            Assistance
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden group-hover:block z-50">
+                            <a href="#chat" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Chat instantané</a>
+                            <a href="#aide" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Centre d'aide</a>
+                            <a href="#status" class="block px-4 py-2 text-gray-800 hover:bg-sky-50">Statut des serveurs</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="hover:text-sky-200 transition py-2 px-3">Contact</a>
                 </div>
             </div>
             <!-- Menu Mobile Panel -->
             <div class="md:hidden" id="mobileMenu" style="display: none;">
-                <div class="flex flex-col space-y-4 pt-4 pb-3">
-                    <a href="#accueil" class="hover:text-sky-200 transition">Accueil</a>
-                    <a href="#portfolio" class="hover:text-sky-200 transition">Réalisations</a>
-                    <a href="#forfaits" class="hover:text-sky-200 transition">Forfaits</a>
-                    <a href="#contact" class="hover:text-sky-200 transition">Contact</a>
+                <div class="flex flex-col space-y-2 pt-4 pb-3">
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Accueil</div>
+                        <a href="#landing" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Landing page</a>
+                        <a href="#offre-phare" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Offre phare</a>
+                    </div>
+                    
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Nos Offres</div>
+                        <a href="#site-vitrine" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Site Vitrine (20$/mois)</a>
+                        <a href="#site-microfinance" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Site Microfinance (35$/mois)</a>
+                        <a href="#site-entreprise" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Site Entreprise (45$/mois)</a>
+                        <a href="#comparer" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Comparer les offres</a>
+                    </div>
+
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Crédit Flexible</div>
+                        <a href="#calculateur" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Calculateur de mensualités</a>
+                        <a href="#eligibilite" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Conditions d'éligibilité</a>
+                        <a href="#faq" class="block px-4 py-2 text-sky-200 hover:bg-white/10">FAQ Crédit</a>
+                    </div>
+
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Réalisations</div>
+                        <a href="#portfolio" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Portfolio clients</a>
+                        <a href="#temoignages" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Témoignages vérifiés</a>
+                    </div>
+
+                    <div class="border-b border-white/20 pb-2">
+                        <div class="px-4 py-2 text-white font-medium">Assistance</div>
+                        <a href="#chat" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Chat instantané</a>
+                        <a href="#aide" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Centre d'aide</a>
+                        <a href="#status" class="block px-4 py-2 text-sky-200 hover:bg-white/10">Statut des serveurs</a>
+                    </div>
+
+                    <a href="#contact" class="block px-4 py-2 text-white hover:bg-white/10">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="accueil" class="pt-24 pb-12 bg-gradient-to-r from-sky-400 to-blue-500 text-white">
+        <section id="accueil" class="pt-24 pb-12 bg-gradient-to-r from-sky-400 to-blue-500 text-white overflow-hidden">
             <div class="container mx-auto px-6 py-20">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="text-left">
-                        <div class="inline-block bg-red-500 text-white px-4 py-2 rounded-full mb-6 animate-pulse">
-                            🔥 Nouveau : Payez votre site web en plusieurs fois !
+                    <div class="text-left relative z-10">
+                        <!-- Badge animé -->
+                        <div class="inline-block bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-full mb-8 animate-pulse border border-white/20">
+                            🚀 Nouveau : Sites web professionnels à partir de 20$/mois
                         </div>
-                        <h1 class="text-5xl font-bold mb-6">Votre Site Web Professionnel à Crédit</h1>
-                        <p class="text-xl mb-8">Obtenez votre site web maintenant, payez en petites mensualités</p>
-                        <div class="space-y-4 mb-8">
+
+                        <!-- Titre principal avec gradient -->
+                        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+                            Votre Site Web<br/>
+                            <span class="text-white">Sans Stress Financier</span>
+                        </h1>
+
+                        <!-- Description améliorée -->
+                        <p class="text-xl mb-8 text-blue-50">
+                            Transformez votre vision en réalité numérique. Obtenez un site web professionnel maintenant et payez en douceur avec nos mensualités accessibles.
+                        </p>
+
+                        <!-- Liste d'avantages avec icônes améliorées -->
+                        <div class="space-y-4 mb-8 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
                             <div class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-sky-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <p>Paiement étalé sur 12 mois sans frais</p>
+                                <div class="bg-white/20 p-2 rounded-lg mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-lg">Paiement étalé sur 10 mois sans frais</p>
                             </div>
                             <div class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-sky-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <p>Aucun acompte nécessaire</p>
+                                <div class="bg-white/20 p-2 rounded-lg mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-lg">Aucun acompte nécessaire</p>
                             </div>
                             <div class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-sky-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                                <p>preventpain meilleur solution</p>
+                                <div class="bg-white/20 p-2 rounded-lg mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-lg">Livraison rapide en 3-6 jours</p>
                             </div>
                         </div>
-                        <a href="#forfaits" class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-sky-100 transition duration-300">
-                            Voir nos forfaits crédit
-                        </a>
+
+                        <!-- Boutons d'action -->
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#forfaits" class="inline-block bg-white text-blue-600 font-bold py-4 px-8 rounded-full hover:bg-sky-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                Voir nos forfaits
+                            </a>
+                            <a href="#contact" class="inline-block bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition duration-300">
+                                Nous contacter
+                            </a>
+                        </div>
                     </div>
-                    <div class="relative">
-                        <img src="{{asset('assets/img/modele-page-destination-restaurant_23-2148466849.jpg')}}" alt="Exemple de site web" class="rounded-lg shadow-2xl">
-                        <div class="absolute -bottom-4 -right-4 bg-white text-sky-800 px-6 py-2 rounded-full font-bold shadow-lg">
-                            À partir de 50$/mois
+
+                    <!-- Partie droite avec image et éléments décoratifs -->
+                    <div class="relative hidden md:block">
+                        <!-- Cercles décoratifs -->
+                        <div class="absolute -top-20 -right-20 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                        <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-sky-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        
+                        <!-- Image principale avec effet de superposition -->
+                        <div class="relative">
+                            <img src="assets/img/ajcas.png" alt="Exemple de site web" class="rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                            
+                            <!-- Badge de prix flottant -->
+                            <div class="absolute -bottom-6 -right-6 bg-white text-sky-800 px-6 py-3 rounded-full font-bold shadow-lg transform hover:scale-105 transition duration-300">
+                                À partir de 20$/mois
+                            </div>
+
+                            <!-- Badge de statistiques -->
+                            <div class="absolute -top-6 -left-6 bg-white/90 backdrop-blur-md text-sky-800 px-6 py-4 rounded-xl font-bold shadow-lg">
+                                <div class="text-sm text-gray-600">Sites livrés</div>
+                                <div class="text-2xl text-sky-600">100+</div>
+                            </div>
                         </div>
+
+                        <!-- Effet de grain/texture -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-sky-400/20 to-blue-500/20 mix-blend-overlay"></div>
                     </div>
                 </div>
             </div>
+
+            <!-- Vague décorative en bas -->
+            <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none transform rotate-180">
+                <svg class="relative block w-full h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-white"></path>
+                </svg>
+            </div>
         </section>
+
+        <!-- Ajout des styles pour l'animation -->
+        <style>
+            @keyframes blob {
+                0% { transform: translate(0px, 0px) scale(1); }
+                33% { transform: translate(30px, -50px) scale(1.1); }
+                66% { transform: translate(-20px, 20px) scale(0.9); }
+                100% { transform: translate(0px, 0px) scale(1); }
+            }
+            .animate-blob {
+                animation: blob 7s infinite;
+            }
+            .animation-delay-2000 {
+                animation-delay: 2s;
+            }
+            .animation-delay-4000 {
+                animation-delay: 4s;
+            }
+        </style>
 
         <!-- Nouvelle section de recommandations -->
         <section class="py-16 bg-white">
@@ -290,6 +463,51 @@
                         <a href="https://wa.me/243819301875?text=Bonjour%20PreventPain%2C%0A%0AJe%20suis%20intéressé%20par%20votre%20forfait%20Site%20Entreprise%20%3A%0A-%20Prix%20%3A%2045%24%2Fmois%20pendant%2010%20mois%0A-%20Boutique%20complète%20avec%20paiement%20en%20ligne%0A-%20Gestion%20des%20stocks%0A-%20SEO%20%26%20marketing%20inclus%0A%0APouvez-vous%20me%20donner%20plus%20d'informations%20%3F" target="_blank" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 inline-block text-center">
                             Commander maintenant
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nouvelle section Avantages Crédit -->
+        <section class="py-16 bg-gradient-to-r from-sky-50 to-blue-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Pourquoi Choisir Notre Crédit ?</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Badge 1 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl mr-4">⏳</span>
+                            <h3 class="text-xl font-semibold text-gray-800">Aucun frais caché</h3>
+                        </div>
+                        <p class="text-gray-600">Profitez d'un taux fixe transparent sans surprise. Nous vous garantissons une tarification claire et honnête dès le début.</p>
+                        <div class="mt-4 inline-block bg-sky-100 text-sky-600 px-4 py-2 rounded-full text-sm font-medium">
+                            Taux fixe garanti
+                        </div>
+                    </div>
+
+                    <!-- Badge 2 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl mr-4">📅</span>
+                            <h3 class="text-xl font-semibold text-gray-800">Échéancier flexible</h3>
+                        </div>
+                        <p class="text-gray-600">Choisissez la durée qui vous convient, de 3 à 24 mois. Adaptez vos mensualités selon votre budget.</p>
+                        <div class="mt-4 inline-block bg-sky-100 text-sky-600 px-4 py-2 rounded-full text-sm font-medium">
+                            3 à 24 mois
+                        </div>
+                    </div>
+
+                    <!-- Badge 3 -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="flex items-center mb-4">
+                            <span class="text-4xl mr-4">🔐</span>
+                            <h3 class="text-xl font-semibold text-gray-800">Approval rapide</h3>
+                        </div>
+                        <p class="text-gray-600">Processus d'approbation simplifié et rapide. Pas de paperasse complexe, décision en 24h maximum.</p>
+                        <div class="mt-4 inline-block bg-sky-100 text-sky-600 px-4 py-2 rounded-full text-sm font-medium">
+                            Sans paperasse
+                        </div>
                     </div>
                 </div>
             </div>
